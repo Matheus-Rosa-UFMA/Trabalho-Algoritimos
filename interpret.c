@@ -30,7 +30,7 @@ void interpret(const char *source) {
     } else if (strcmp(op, "sub") == 0) {
         int b = stack_pop(pilha);
         int a = stack_pop(pilha);
-        stack_push(pilha, a - b);
+        stack_push(pilha, b - a);
     } else if (strcmp(op, "mul") == 0) {
         int b = stack_pop(pilha);
         int a = stack_pop(pilha);
